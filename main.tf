@@ -5,7 +5,8 @@ resource "aws_instance" "myec2" {
   ami           = var.amiid
   instance_type = "t2.micro"
   tags = {
-    "Name" = "Mandeep-${var.tags[count.index]}"
+    "Name" = "Mandeep-${var.tags[count.index]}",
+    "ENV" = var.env
   }
 }
 

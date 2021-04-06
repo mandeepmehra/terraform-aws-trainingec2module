@@ -1,3 +1,6 @@
+variable "env"{
+  description = "Environment Name"
+}
 
 variable "amiid" {
   description = "AMI ID of the instance"
